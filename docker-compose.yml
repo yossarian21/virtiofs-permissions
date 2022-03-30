@@ -1,0 +1,9 @@
+version: '2'
+services:
+  terminal:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - .:/usr/src/app
+    entrypoint: bash
